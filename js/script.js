@@ -15,8 +15,8 @@ function loadDoc() {
       document.getElementById("demo").innerHTML = this.responseText;
     }
   };
-  xhttp.open("GET", "cors.io/?u=https://cloud.estimote.com/v2/devices/40b53f0f65a40b6f18c91e6f16ff802d", true);
   xhttp.setRequestHeader("Authorization", "Basic" + btoa("rmit-vietnam-s-notificatio-4vp:b4c01c4b0b5298254f92abd95d1c48c5"));
   xhttp.setRequestHeader("Accept", "application/json");
+  xhttp.open("GET", "cors.io/?u=https://cloud.estimote.com/v2/devices/40b53f0f65a40b6f18c91e6f16ff802d", true);
   xhttp.send();
 }
